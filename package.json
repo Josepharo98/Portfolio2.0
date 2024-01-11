@@ -1,9 +1,12 @@
 {
   "name": "main",
   "private": true,
+  "homepage": "https://josepharo98.github.io/portfolio2.0",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "dev": "vite",
     "start": "vite",
     "build": "vite build",
@@ -11,6 +14,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.1"
